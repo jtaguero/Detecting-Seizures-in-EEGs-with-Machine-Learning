@@ -3,7 +3,7 @@
 This project would use some available EEG data to attempt to classify short windows of EEG signal as either recording a seizure or not. I would like to extend this to a predictive model as well. I believe both CNN and RNN  have been used on such datasets. 
 The article 'Deep learning for electroencephalogram(EEG) classification tasks: a review' in the Journal of Neural Engineering which is linked below details many approaches that have been used including the use of CNNs with spectrograms of the EEG used as the input and the less prevalent use of RNNs to analysze EEG data. It is claimed thaty 41% of the studies used calculated features which included, among other things, Fourier transforms, power spectral density and wavelets. The article can be found here:
 
-[link to article](https://iopscience.iop.org/article/10.1088/1741-2552/ab0ab5/pdf)
+['Deep learning for electroencephalogram(EEG) classification tasks: a review'](https://iopscience.iop.org/article/10.1088/1741-2552/ab0ab5/pdf)
 
  
 I approached this problem using random forests for my previous project. I hope to compare at least a couple different models on the data. I will do more feature engineering this time using the Fourier transform and possibly wavelets to compare the results and relative merits of these approaches. I would also like to experiment with testing models trained on one subject's recordings on other subjects recorded during the study. I hope to develop a predictive model for this project as well though I am not sure exactly which model I will use for this. I will definitely be using the MNE library again for preprocessing and constructing the train and test sets. 
