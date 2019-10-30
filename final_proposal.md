@@ -1,7 +1,7 @@
 ### Final Capstone Proposal
 
-This project would use some available EEG data to attempt to classify short windows of EEG signal as either recording a seizure or not. I would like to extend this to a predictive model as well. I believe both CNN and RNN  have been used on such datasets. 
-The article 'Deep learning for electroencephalogram (EEG) classification tasks: a review' in the Journal of Neural Engineering which is linked below details many approaches that have been used including the use of CNNs with spectrograms of the EEG used as the input and the less prevalent use of RNNs to analysze EEG data. It is claimed that 41% of the studies used calculated features which included, among other things, Fourier transforms, power spectral density and wavelets. The article can be found here:
+This project would use some available EEG data to attempt to classify short windows of EEG signal as either recording a seizure or not. I would like to extend this to a predictive model as well. Both CNN and RNN  have been used on such datasets. 
+The article 'Deep learning for electroencephalogram (EEG) classification tasks: a review' in the Journal of Neural Engineering which is linked below details many approaches that have been used including the use of CNNs with spectrograms of the EEG used as the input and the less prevalent use of RNNs to analyze EEG data. It is claimed that 41% of the studies used calculated features which included, among other things, Fourier transforms, power spectral density and wavelets. The article can be found here:
 
 ['Deep learning for electroencephalogram (EEG) classification tasks: a review'](https://iopscience.iop.org/article/10.1088/1741-2552/ab0ab5/pdf)
 
