@@ -1,4 +1,4 @@
-## Final Capstone Proposal
+## Detecting Seizures in EEGs with Machine Learning
 
 ## Objective
 
