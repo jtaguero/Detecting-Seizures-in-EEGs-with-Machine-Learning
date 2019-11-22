@@ -1,5 +1,8 @@
 ## Detecting Seizures in EEGs with Machine Learning
 
+![EEG_SEIZURE]
+(https://github.com/jtaguero/Detecting-Seizures-in-EEGs-with-Machine-Learning/tree/master/pngs/EEG_Seizure1.png)
+
 ## Objective
 
 This project used some available EEG data to attempt to classify short windows of EEG signal as either recording a seizure or not. I would like to extend this to a predictive model as well. Both CNN and RNN have been used on such datasets. 
