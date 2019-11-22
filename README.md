@@ -16,7 +16,7 @@ I approached this problem using balanced random forests due to the unbalanced na
 
 There are many other datasets available of EEG and many of them also recorded seizures but this dataset is the best I've found so far. One of the larger datasets I have found so far includes 664 .edf files of EEGs from the Children’s Hospital Boston of 22 pediatric subjects with intractable seizures. 129 of the files include one or more seizures with 198 seizures in total recorded. In addition there are annotations which specify the beginning and end of each recorded seizure.It can be found here:
 
-https://archive.physionet.org/pn6/chbmit/
+https://physionet.org/content/chbmit/1.0.0/
 
 ## Challenges
 
