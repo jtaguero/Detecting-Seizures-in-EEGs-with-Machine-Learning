@@ -13,7 +13,13 @@ The article 'Deep learning for electroencephalogram (EEG) classification tasks: 
 
 ## My approach to the problem
  
-I approached this problem using balanced random forests due to the unbalanced nature of this classification problem. The recorded seizures makes up less than .5 % of the dataset. I did some feature engineering using the Welch power spectral density, a version of the fast Fourier transform. I would like to work further with Fourier transforms and wavelets to compare their relative merits for this problem. I also experimented with testing models trained on one subject's recordings on other subjects recorded during the study. I hope to develop a predictive model for this project as well probably using CNN or RNN. I will definitely be using the MNE library again for preprocessing and constructing the train and test sets.  
+I approached this problem using balanced random forests due to the unbalanced nature of this classification problem. The recorded seizures makes up less than .5 % of the dataset. I did some feature engineering using the Welch power spectral density, a version of the fast Fourier transform. I would like to work further with Fourier transforms and wavelets to compare their relative merits for this problem. I also experimented with testing models trained on one subject's recordings on other subjects recorded during the study. I hope to develop a predictive model for this project as well probably using CNN or RNN. I will definitely be using the MNE library again for preprocessing and constructing the train and test sets.               
+
+## Tools utilized
+
+Below are some of the tools I used for this project, including Imblearn which implements the Balanced Random Forest in python and the MNE library which is designed for preprocessing and analysis of EEG and MEG files.
+
+![tools_used](https://github.com/jtaguero/Detecting-Seizures-in-EEGs-with-Machine-Learning/blob/master/pngs/Tools.png)
 
 ## The Data
 
