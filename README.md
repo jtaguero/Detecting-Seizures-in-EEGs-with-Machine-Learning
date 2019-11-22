@@ -1,7 +1,7 @@
 ## Detecting Seizures in EEGs with Machine Learning
 
 ![EEG_SEIZURE]
-(https://github.com/jtaguero/Detecting-Seizures-in-EEGs-with-Machine-Learning/tree/master/pngs/EEG_Seizure1.png)
+(https://github.com/jtaguero/Detecting-Seizures-in-EEGs-with-Machine-Learning/blob/master/pngs/EEG%20Seizure1.png)
 
 ## Objective
 
