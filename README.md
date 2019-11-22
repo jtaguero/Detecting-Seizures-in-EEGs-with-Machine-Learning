@@ -1,6 +1,5 @@
 ## Detecting Seizures in EEGs with Machine Learning
 
-![eeg_seizure](https://github.com/jtaguero/Detecting-Seizures-in-EEGs-with-Machine-Learning/blob/master/pngs/EEG%20Seizure1.png)
 
 ## Objective
 
@@ -8,6 +7,9 @@ This project used some available EEG data to attempt to classify short windows o
 The article 'Deep learning for electroencephalogram (EEG) classification tasks: a review' in the Journal of Neural Engineering which is linked below details many approaches that have been used including the use of CNNs with spectrograms of the EEG used as the input and the less prevalent use of RNNs to analyze EEG data. It is claimed that 41% of the studies used calculated features which included, among other things, Fourier transforms, power spectral density and wavelets. The article can be found here:
 
 ['Deep learning for electroencephalogram (EEG) classification tasks: a review'](https://iopscience.iop.org/article/10.1088/1741-2552/ab0ab5/pdf)
+
+
+![eeg_seizure](https://github.com/jtaguero/Detecting-Seizures-in-EEGs-with-Machine-Learning/blob/master/pngs/EEG%20Seizure1.png)
 
 ## My approach to the problem
  
