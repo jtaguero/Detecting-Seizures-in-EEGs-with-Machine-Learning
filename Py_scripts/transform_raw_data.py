@@ -3,6 +3,7 @@ def transform_raw_data(subject='chb01', annotations_dict=annotations_dict):
     from mne.channels.montage import get_builtin_montages
     
     for rec in records_loc_lst:
+        #for all records matching the subject read them into an mne raw object and set the channels
 
         if rec[0:5] == subject:
                 data_path = 'chb-mit-scalp-eeg-database-1.0.0/'
@@ -17,6 +18,8 @@ def transform_raw_data(subject='chb01', annotations_dict=annotations_dict):
                     
                 montage = mne.channels.read_montage("standard_1020")
                 data.set_montage(montage)    
+
+                #if rec in annotations_dict set the annotations for the seizures in the raw object
                     
                 rec_name = rec.split('/')[1].split('.')[0]
                 if rec_name in annotations_dict:
@@ -25,7 +28,8 @@ def transform_raw_data(subject='chb01', annotations_dict=annotations_dict):
             
                     event_id = dict(Seizure=1, Nonseizure=0)
                     events_from_annot, event_dict = mne.events_from_annotations(data, chunk_duration=1)
-                    
+
+                 #if rec not in annotations_dict set the annotations as all nonseizure in the raw object    
                     
                 if rec_name not in annotations_dictionary:
                     events = mne.make_fixed_length_events(data, id=0, start=0, stop=None, duration=1.0, first_samp=True, overlap=0.0)
@@ -40,7 +44,7 @@ def transform_raw_data(subject='chb01', annotations_dict=annotations_dict):
                     data.set_annotations(annot_from_events)    
                     
                 
-                
+            #save raw files with annotations set as fif files  
                 
             fif_lst = []
             fif = '_raw.fif'

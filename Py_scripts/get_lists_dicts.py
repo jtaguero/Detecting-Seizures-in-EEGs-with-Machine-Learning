@@ -1,6 +1,7 @@
 def get_records_lists():
     
     records_loc_lst = []
+    #create list of file locations from text file included in dataset
     with open('Data/RECORDS') as f:
         line_list = f.read().splitlines()
         for elem in line_list:
@@ -9,15 +10,18 @@ def get_records_lists():
             
             
     records_w_seizures = []
+    #create list of files containing seizures from text file included in dataset
     with open('Data/RECORDS-WITH-SEIZURES') as f:
         line_list = f.readlines()
         for elem in line_list:
             
             if len(elem) > 1:
                 records_w_seizures.append(elem.split("/")[1].split('.')[0])
+                #make correction
     records_w_seizures[34] = 'chb07_19'            
 
     records_lst = []
+    #create list of records
     for rec in records_loc_lst:
         rec_name = rec.split('/')[1].split('.')[0]
         records_lst.append(rec_name)
@@ -27,6 +31,9 @@ def get_records_lists():
 
 
 def get_seizures_dictionary():
+    #create seizure dictionary with all seizure information from text files. 
+    # This dictionary will beused to create the annotations added to the f
+    # iles to create our labelled sets of seizure and non-seizre periods
 
     d = {}
     with open('Data/seizures.txt') as f:
@@ -108,6 +115,7 @@ def get_seizures_dictionary():
             
 def make_annotations_dict(d):
     import mne
+    #use seizure dictionary to create dictionary of mne annotations objects for use in epoching and labeling data
 
     anno_nm_lst = [n for n in range(138)]
     anno_lst = [n for n in range(138)]
@@ -135,7 +143,7 @@ def make_annotations_dict(d):
 
         
         anno = elem 
-        
+        #create mne annotations object from data taken from seizures dictionary for each file containing a seizure
         anno_nm_lst[idx] = anno
         anno = mne.Annotations(onset=onset,
                                 duration=duration,
